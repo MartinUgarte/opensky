@@ -1,0 +1,26 @@
+[project]
+name = "flights-ingest"
+version = "0.1.0"
+description = "Ingesta de vuelos desde la API de OpenSky"
+readme = "README.md"
+authors = [
+    { name = "ITBA Cloud DE", email = "docentes@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+flights-ingest = "flights_ingest:main"
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+    "ruff>=0.17.3",
+]

@@ -1,0 +1,14 @@
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Configuración local y secretos
+.env
+
+# Datos generados
+data/
+dist/
