@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-flights-ingest = "flights_ingest:main"
+flights-ingest = "flights_ingest.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.11.7,<0.12.0"]

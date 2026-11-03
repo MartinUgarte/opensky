@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from flights-ingest!")
+"""flights-ingest: ingesta de vuelos desde la API de OpenSky."""
