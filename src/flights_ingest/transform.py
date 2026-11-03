@@ -28,9 +28,9 @@ def filtrar(states: list[list[Any]], pais: str) -> list[Vuelo]:
     """
     vuelos: list[Vuelo] = []
     for s in states:
-        if s[ORIGIN_COUNTRY] != pais:
+        if s[CALLSIGN] != pais:
             continue
-        callsign = s[CALLSIGN].strip() if s[CALLSIGN] else None
+        callsign = s[CALLSIGN].strip()
         vuelos.append(
             {"icao24": s[ICAO24], "callsign": callsign, "pais": s[ORIGIN_COUNTRY]}
         )

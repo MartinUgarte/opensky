@@ -41,9 +41,6 @@ def main() -> None:
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
     states = fetch_states(settings.base_url, parse_bbox(settings.bbox))
-    if states is None:
-        logger.warning("La API no devolvió estados para el bbox %s", settings.bbox)
-        states = []
     vuelos = filtrar(states, settings.pais)
     path = escribir_json(vuelos, settings.output_dir)
     logger.info("Escribí %d vuelos en %s", len(vuelos), path)
