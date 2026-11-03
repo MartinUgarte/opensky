@@ -7,7 +7,7 @@ sobre Buenos Aires en un JSON. Durante la clase lo vamos a ir convirtiendo en un
 
 ## Etapas
 
-Cada etapa es una rama. Si te atrasás, saltá a la siguiente con `git checkout <rama>`.
+Cada etapa es una rama. Se puede saltar a la siguiente con `git checkout <rama>`.
 
 | Rama | Etapa |
 |---|---|
